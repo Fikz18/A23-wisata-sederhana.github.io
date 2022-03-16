@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap');
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+  
+.container {
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+  
+/*class header */
+
+header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(29, 34, 40, 0.9);
+    position: fixed;
+    top:0;
+    z-index: 10;
+    box-shadow:  0px 0px 5px 0px #ffffff;
+    margin:0px 0px 5px 0px;
+}
+  
+.logo {
+    width: 124px;
+}
+  
+.header-left {
+    float: left;
+}
+  
+.header-right {
+    float: right;
+    transition: all 0.5s;
+}
+.header-right ul {
+    list-style: none;
+    position: relative;
+}
+
+.header-right ul li:hover > ul {
+    display: block;
+    border-radius: 5px;
+}
+
+.header-right ul li {
+    float: left;
+}
+
+.header-right ul li a{
+    padding: 5px 20px;
+    color: #FB8122;
+    display: block;
+    cursor: pointer;
+}
+
+.header-right ul li a:hover{
+    background:  rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+}
+
+.header-right ul ul {
+    background: rgba(29, 34, 40, 0.9);
+    padding: 0;
+    margin-bottom:10px;
+    position: absolute;
+    display: none;
+    width:30%;
+}
+  
+.top-wrapper {
+    padding: 180px 0 100px 0;
+    background-image: url(asset/1.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    height:auto;
+}
+  
+.top-wrapper h1 {
+    font-size: 35px;
+    letter-spacing: 2px;
+    color:red;
+}
+
+.top-wrapper span {
+    color:white;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+  
+  
+.btn-wrapper {
+    margin: 20px 0;
+}
+
+.start {
+    background-color: #FB8122;
+}
+
+.btn {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+
+
+.opening-words img {
+    float: left;
+    width:40%;
+    border-radius: 10px 10px 10px 10px;
+    margin-right:20px;
+}
+.opening-words p {
+    text-align:justify;
+}
+
+
+  
+
+.items{
+   text-align: center;
+}
+
+.item-hr {
+    border-color: red;
+    border-style: groove;
+    width:20%;
+    text-align:left;
+}
+
+
+.item {
+    display:inline-table;
+    width:30%;
+    padding:0 10px;  
+}
+
+.item-icon {
+    position: relative;
+}
+.item-icon img {
+    width: 100%;
+    border-radius: 10px 10px;
+}
+.item-icon img:hover {
+    transform: scale(1.1);
+}
+
+.item h3 {
+    font-size:18px;
+    padding-bottom:20px;
+}
+  
+/*------------------------------------------------------------------
+    FOOTER
+-------------------------------------------------------------------*/
+
+.cac {
+    background-color: #232323;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.cac:hover a h3 {
+    color: #fff !important;
+}
+
+.cac a h3 {
+    color: #999;
+}
+
+.cac h3 {
+    padding: 60px 0;
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: capitalize;
+    line-height: 0px !important;
+}
+
+.footer {
+    padding: 90px 0 80px !important;
+    color: #999;
+    background-color: #1f1f1f;
+}
+
+.footer .widget-title {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.footer .widget-title small {
+    color: #999;
+    display: block;
+    padding: 0 58px;
+    text-transform: uppercase;
+}
+
+.footer .widget-title h3 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 21px;
+    padding: 0;
+    margin: 0;
+    line-height: 1 !important;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links a {
+    color: #999;
+}
+
+.footer-links a:hover,
+.footer a:hover {
+    color: #333333 !important;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+    padding-bottom: 10px;
+}
+
+.twitter-widget li {
+    margin-bottom: 0;
+    border: 0 !important;
+}
+
+.twitter-widget li i {
+    border-right: 0 !important;
+    margin-right: 0;
+}
+
+.footer-links li:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border: 0;
+}
+
+.footer-links i {
+    display: inline-block;
+    width: 25px;
+    margin-right: 10px;
+    border-right: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+.copyrights {
+    border-top: 1px dashed rgba(255, 255, 255, 0.1);
+    background-color: #1f1f1f;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    padding: 30px 0px;
+    overflow: hidden;
+}
+
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    float: left;
+}
+
+.footer-distributed .footer-links {
+    margin: 0 0 10px;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    margin: 0 10px 0 10px;
+    text-decoration: none;
+}
+
+.footer-distributed .footer-company-name {
+    font-weight: 300;
+    margin: 0 10px;
+    color: #666;
+    padding: 0;
+}
+
+
+/* Footer right */
+
+.footer-distributed .footer-right {
+    float: right;
+}
+
+
+/* The search form */
+
+.footer-distributed form {
+    position: relative;
+}
+
+.footer-distributed form input {
+    display: block;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: #181818;
+    border: none;
+    font: inherit;
+    font-size: 15px;
+    font-weight: normal;
+    color: #999;
+    width: 400px;
+    padding: 18px 50px 18px 18px;
+}
+
+.footer-distributed form input:focus {
+    outline: none;
+}
+
+
+/* Changing the placeholder color */
+
+.footer-distributed form input::-webkit-input-placeholder {
+    color: #999;
+}
+
+.footer-distributed form input::-moz-placeholder {
+    opacity: 1;
+    color: #999;
+}
+
+.footer-distributed form input:-ms-input-placeholder {
+    color: #999;
+}
+
+
+/* The magnify glass icon */
+
+.footer-distributed form i {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    color: #999;
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+.footer-distributed .footer-company-name a{
+    color: #ffffff;
+}
+
+.footer-distributed .footer-company-name a:hover{
+    color: #cccccc;
+}
+
+
+
